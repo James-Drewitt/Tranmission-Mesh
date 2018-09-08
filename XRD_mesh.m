@@ -1,7 +1,7 @@
 dat=importdata('267297.dat');
-z=dat.data(1:end,3);
-x=dat.data(1:end,1);
-y=dat.data(1:end,2);
+z=dat(1:end,4);
+x=dat(1:end,1);
+y=dat(1:end,2);
 
 %Create regular grid across data space
 [X,Y] = meshgrid(linspace(min(x),max(x),300), linspace(min(y),max(y),300));
